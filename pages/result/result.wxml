@@ -1,0 +1,28 @@
+<!--pages/detect/detect.wxml-->
+<view class="detect-container">
+  <image src="{{img || '../../images/image.png'}}" />
+  <view class="people-container" wx:if="{{peopleOpt.length > 0}}">
+    <text>联系人</text>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <radio class="radio" wx:for-items="{{peopleOpt}}" wx:key="name" value="{{item.name}}" checked="{{item.checked}}">
+        <text>{{item.name}}</text>
+      </radio>
+    </radio-group>
+  </view>
+  <view class="phone-container" wx:if="{{phoneOpt.length > 0}}">
+    <text>联系方式</text>
+    <checkbox-group bindchange="checkboxChange">
+      <label class="checkbox" wx:for="{{phoneOpt}}" wx:key="name">
+        <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.name}}
+        <image class="phone-icon" src="../../images/outgoing-call.png" data-value="{{item.name}}" catch:tap="call" />
+      </label>
+    </checkbox-group>
+  </view>
+  <view class="contact-container">
+    <image class="contact-icon" src="../../images/contact.svg" bind:tap="addContact" />
+
+  </view>
+  <!-- <text>people: {{people || '--'}}</text>
+  <text>phone: {{phone || '--'}}</text>-->
+  <text style="color: red">{{errMsg}}</text>
+</view>

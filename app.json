@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/detect/detect",
+    "pages/result/result"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "DETECT",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#FFF"
+  },
+  "sitemapLocation": "sitemap39.json"
+}

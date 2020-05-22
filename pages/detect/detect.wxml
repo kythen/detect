@@ -1,0 +1,4 @@
+<view class="index-container">
+  <image src="../../images/camera.png" data-type="camera" bind:tap="onClick" />
+  <image src="../../images/upload.png" data-type="album" bind:tap="onClick" />
+</view>

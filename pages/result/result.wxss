@@ -1,0 +1,48 @@
+/* pages/detect/detect.wxss */
+
+.detect-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+button {
+  margin: 10px;
+}
+
+.people-container, .phone-container {
+  position: relative;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+}
+
+.people-container > text, .phone-container > text {
+  position: absolute;
+  top: -14px;
+  left: 18px;
+  background: #fff;
+  padding: 4px;
+}
+
+.phone-container checkbox-group, .people-container radio-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone-container checkbox, .people-container radio {
+  margin: 4px;
+}
+
+.phone-icon {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.contact-icon {
+  width: 60rpx;
+  height: 60rpx;
+}
+
